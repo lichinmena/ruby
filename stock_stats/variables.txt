@@ -1,0 +1,9 @@
+person = "Tim"
+#{person.class}
+#{person.object.id}
+#{person}
+
+person1 = "TIM"
+person2 = person1 # !NO Crea una copia, crea una referencia
+
+person1.freeze # Impide la modificacion del objeto

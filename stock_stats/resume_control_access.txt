@@ -1,0 +1,47 @@
+Accesos de control
+
+Public 
+Puede ser llamado por cualquiera, Los metodos son publicos por default, exepto initialize que es private
+
+Protected
+Pueden ser invocados solo por por objetos de la definicion de la clase y subclase
+
+
+
+Private
+no se puede llamar con un receptor explícito, el receptor es siempre el objeto actual, también conocido como self
+
+Protected  es usado cuando los objetos necesitan acceder a un estado interno de otro objeto de la misma clase
+
+Primera forma de determinar accesos
+
+def method1
+end
+
+protected
+def method2
+end
+
+private
+def method3
+end
+
+public
+def method4
+end
+
+
+
+Segunda forma de determinar accesos
+
+class MyClass
+    def method1 end
+    def method2 end
+    def method3 end
+    def method4 end
+    def method5 end
+
+    public    :method1, :method4
+    protected :method2
+    private   :method3
+end
